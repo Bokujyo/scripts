@@ -24,7 +24,7 @@ function openWindow(content){
 	w.document.close();
 }
 
-function exportGTPJsonAll(){
+function exportGPTJsonAll(){
 	getToken().then(t => getJson(getID(), t)).then(c => {
 		navigator.clipboard.writeText(c);
 		openWindow(c);
